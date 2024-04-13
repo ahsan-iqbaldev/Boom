@@ -10,7 +10,7 @@ const Navbar = () => {
       <Link href="/" className="flex items-center gap-1">
         <Image src="/icons/logo.svg" alt="Boom Logo" width={32} height={32} />
         <p className="text-[26px] font-extrabold text-white max-sm:hidden">
-          Boom
+          BoomTalk
         </p>
       </Link>
 
