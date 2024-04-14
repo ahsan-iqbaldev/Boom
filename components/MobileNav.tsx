@@ -25,7 +25,7 @@ const MobileNav = () => {
             width={36}
             height={36}
             alt="hamburger Icon"
-            className="max-sm:size-10"
+            className="max-sm:size-10 block md:hidden"
           />
         </SheetTrigger>
         <SheetContent side="left" className="border-none bg-dark-1">
@@ -42,8 +42,7 @@ const MobileNav = () => {
             <SheetClose asChild>
               <section className="flex h-full flex-col gap-6 pt-16 text-white">
                 {sidebarLinks.map((link) => {
-                  const isActive =
-                    pathname === link.route;
+                  const isActive = pathname === link.route;
                   return (
                     <SheetClose asChild key={link.route}>
                       <Link
